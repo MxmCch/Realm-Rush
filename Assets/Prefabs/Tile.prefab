@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a0c1c3c745fad94bb3b4162275e9aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 5865592694408037775, guid: 5de8a6a0f6e33044f97ab8cedd8c942e, type: 3}
   isPlaceable: 1
 --- !u!65 &6471616385908795182
 BoxCollider:
