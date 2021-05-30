@@ -224,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792292658810703616, guid: cb0648689eaeea144b4402e7cc645c50, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2792292658810703616, guid: cb0648689eaeea144b4402e7cc645c50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 232366289}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1122,7 +1122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3084121325408133612, guid: 5301f2389eaadef46a4b791fdae4ad36, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3084121325408133612, guid: 5301f2389eaadef46a4b791fdae4ad36, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1204,7 +1204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2106035459281683573, guid: e2bbbca1c9361ee40b2998ad8060bb06, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2106035459281683573, guid: e2bbbca1c9361ee40b2998ad8060bb06, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1372,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2106035459281683573, guid: f5c911e64fb9fcf419548bf34d07a816, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2106035459281683573, guid: f5c911e64fb9fcf419548bf34d07a816, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1755,7 +1755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2106035459281683573, guid: e2bbbca1c9361ee40b2998ad8060bb06, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2106035459281683573, guid: e2bbbca1c9361ee40b2998ad8060bb06, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
