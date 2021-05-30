@@ -5,9 +5,25 @@ using UnityEngine;
 public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform weapon;
-    [SerializeField] Transform target;
+    Transform target;
+
+    private void Start() 
+    {
+        //faster
+        target = FindObjectOfType<EnemyMover>().transform;
+
+        //my solution
+        /*EnemyMover _pos = (EnemyMover) FindObjectOfType(typeof(EnemyMover));
+        target = _pos.transform;*/
+    }
+
     void FixedUpdate()
     {
-        this.transform.Rotate(to)
+        AimWeapon();
+    }
+
+    private void AimWeapon()
+    {
+        weapon.LookAt(target);
     }
 }
