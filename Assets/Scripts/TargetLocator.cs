@@ -33,6 +33,7 @@ public class TargetLocator : MonoBehaviour
         else
         {
             ShootParticle(false);
+            target = FindObjectOfType<EnemyMover>().transform;
         }
     }
 
