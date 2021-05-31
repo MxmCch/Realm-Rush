@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 2676258303922878244}
-  target: {fileID: 0}
 --- !u!1001 &2545443157421282756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98,37 +97,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1660263449083987604, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
+    - target: {fileID: 1689167641221006616, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1660263449083987604, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
+    - target: {fileID: 1689167641221006616, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1660263449083987604, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660263449083987604, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660263449083987604, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660263449083987604, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660263449083987604, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660263449083987604, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.8
+    - target: {fileID: 1689167641221006616, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
+      propertyPath: CollisionModule.radiusScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2979662092420137591, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
       propertyPath: m_Name
