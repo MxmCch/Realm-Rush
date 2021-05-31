@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TargetLocator : MonoBehaviour
 {
+    public GameObject shooterParticle;
     [SerializeField] Transform weapon;
     Transform target;
 
@@ -24,6 +25,21 @@ public class TargetLocator : MonoBehaviour
 
     private void AimWeapon()
     {
-        weapon.LookAt(target);
+        if (target != null)
+        {
+            ShootParticle(true);
+            weapon.LookAt(target);
+        }
+        else
+        {
+            ShootParticle(false);
+        }
+    }
+
+    private void ShootParticle(bool shootBool)
+    {
+        var _shoot = shooterParticle.GetComponent<ParticleSystem>().emission;
+        _shoot.enabled = shootBool;
+    
     }
 }

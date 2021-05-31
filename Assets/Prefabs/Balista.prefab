@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e3e4d677f81ed4b93324411e7e957d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shooterParticle: {fileID: 1684778048503943234}
   weapon: {fileID: 2676258303922878244}
 --- !u!1001 &2545443157421282756
 PrefabInstance:
@@ -118,6 +119,11 @@ PrefabInstance:
 --- !u!4 &2676258303922878244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464083722313425632, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
+  m_PrefabInstance: {fileID: 2545443157421282756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1684778048503943234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3761266163422545286, guid: 4de2b6e31d87781459b696799bff661f, type: 3}
   m_PrefabInstance: {fileID: 2545443157421282756}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5061513207526380389
