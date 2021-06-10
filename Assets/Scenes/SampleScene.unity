@@ -876,8 +876,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ef6d0c1111d4141aee7e33ad300c2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 3
+  waitTime: 2
   saveCheck: 1
+  poolSize: 5
   enemyPrefab: {fileID: 2661810392155703880, guid: f47fc1c68240dbe4c9ddbff7181bf939, type: 3}
 --- !u!4 &931504391
 Transform:
