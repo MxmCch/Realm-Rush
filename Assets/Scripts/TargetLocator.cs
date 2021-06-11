@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,25 +7,40 @@ public class TargetLocator : MonoBehaviour
 {
     public GameObject shooterParticle;
     [SerializeField] Transform weapon;
+    [SerializeField] float range = 15;
+    [SerializeField] ParticleSystem projectileParticles;
     Transform target;
 
-    private void Start() 
-    {
-        //faster
-        target = FindObjectOfType<EnemyMover>().transform;
 
-        //my solution
-        /*EnemyMover _pos = (EnemyMover) FindObjectOfType(typeof(EnemyMover));
-        target = _pos.transform;*/
+    void Update()
+    {
+        FindClosestTarger();
+        AimWeapon();
     }
 
-    void FixedUpdate()
+    void FindClosestTarger()
     {
-        AimWeapon();
+        Enemy[] enemies = FindObjectsOfType<Enemy>();
+        Transform closestTarget = null;
+        float maxDistance = Mathf.Infinity;
+
+        foreach (Enemy enemy in enemies)
+        {
+            float targetDistance = Vector3.Distance(transform.position, enemy.transform.position);
+
+            if (targetDistance < maxDistance)
+            {
+                closestTarget = enemy.transform;
+                maxDistance = targetDistance;
+            }
+        }
+        target = closestTarget;
     }
 
     private void AimWeapon()
     {
+        float targetDistance = Vector3.Distance(transform.position, target.position);
+
         if (target != null)
         {
             ShootParticle(true);
