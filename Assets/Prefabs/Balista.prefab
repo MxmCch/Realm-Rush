@@ -47,6 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shooterParticle: {fileID: 1684778048503943234}
   weapon: {fileID: 2676258303922878244}
+  range: 6
+  projectileParticles: {fileID: 0}
 --- !u!1001 &2545443157421282756
 PrefabInstance:
   m_ObjectHideFlags: 0

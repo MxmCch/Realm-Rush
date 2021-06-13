@@ -7,8 +7,7 @@ public class TargetLocator : MonoBehaviour
 {
     public GameObject shooterParticle;
     [SerializeField] Transform weapon;
-    [SerializeField] float range = 15;
-    [SerializeField] ParticleSystem projectileParticles;
+    [SerializeField] float range = 2;
     Transform target;
 
 
@@ -40,23 +39,24 @@ public class TargetLocator : MonoBehaviour
     private void AimWeapon()
     {
         float targetDistance = Vector3.Distance(transform.position, target.position);
-
-        if (target != null)
+        Debug.Log(targetDistance);
+        if (range >= targetDistance)
         {
-            ShootParticle(true);
+            Debug.Log("fdsa");
             weapon.LookAt(target);
+            ShootParticle(true);
         }
         else
         {
+            Debug.Log("fffffff");
             ShootParticle(false);
-            target = FindObjectOfType<EnemyMover>().transform;
         }
+
     }
 
     private void ShootParticle(bool shootBool)
     {
         var _shoot = shooterParticle.GetComponent<ParticleSystem>().emission;
         _shoot.enabled = shootBool;
-    
     }
 }
